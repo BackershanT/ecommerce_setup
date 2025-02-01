@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 
 import '../widget/detail_card.dart';
 
-class DeliveredScreen extends StatelessWidget {
+class CancelledScreen extends StatelessWidget {
   final VoidCallback onTap;
 
-  const DeliveredScreen({super.key, required this.onTap,});
+  const CancelledScreen({super.key, required this.onTap, });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
         children: [
-          DetailCard(onTap: (){}, title: 'Delivered',textColor: Colors.green,)
+          DetailCard(onTap: (){}, title: 'Cancelled', textColor: Colors.red,)
 
         ],
       ),

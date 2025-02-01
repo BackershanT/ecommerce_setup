@@ -9,14 +9,14 @@ class AddressScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String title= "Delivery Address";
-    final String title1= "SBI Building, street 3, Software Park";
-    final String title2= "Send To";
-    final String title3= "My Office";
-    final String title4= "Edit";
-    final String title5= "MyHome";
+    final String title = "Delivery Address";
+    final String title1 = "SBI Building, street 3, Software Park";
+    final String title2 = "Send To";
+    final String title3 = "My Office";
+    final String title4 = "Edit";
+    final String title5 = "MyHome";
 
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text(title),
         centerTitle: true,
@@ -25,77 +25,85 @@ class AddressScreen extends StatelessWidget {
       body: ListView(
         children: [
           MainCard(
-
-            radius: 20,
-            elevation: 8,
-            width: 315.w,
-            padding: EdgeInsets.symmetric(horizontal: 15,vertical: 15),
+              radius: 20,
+              elevation: 8,
+              width: 315.w,
+              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               height: 110.h,
-
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(Icons.circle_outlined),
-                    Image.asset('assets/icons/profile/address/company.png',scale: 20,),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(title2,style: TextStyle(fontSize: 12.sp),),
-                        Text(title3,style: TextStyle(fontSize: 14.sp,fontWeight: FontWeight.bold),)
-                      ],
-                    ),
-                    TextButton(onPressed: (){}, child: Text(title4))
-                  ],
-                ),
-
-                Text(title1,style: TextStyle(
-                  fontSize: 12.sp
-                ),)
-              ],
-            )
-
-
-
-          ),
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Icon(Icons.circle_outlined),
+                      Image.asset(
+                        'assets/icons/profile/address/company.png',
+                        scale: 20,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            title2,
+                            style: TextStyle(fontSize: 12.sp),
+                          ),
+                          Text(
+                            title3,
+                            style: TextStyle(
+                                fontSize: 14.sp, fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                      TextButton(onPressed: () {}, child: Text(title4))
+                    ],
+                  ),
+                  Text(
+                    title1,
+                    style: TextStyle(fontSize: 12.sp),
+                  )
+                ],
+              )),
           MainCard(
-
-            radius: 20,
-            elevation: 8,
-            width: 315.w,
-            padding: EdgeInsets.symmetric(horizontal: 15,vertical: 15),
+              radius: 20,
+              elevation: 8,
+              width: 315.w,
+              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               height: 110.h,
-
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(Icons.circle_outlined),
-                    Image.asset('assets/icons/profile/address/home.png',scale: 20,),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(title2,style: TextStyle(fontSize: 12.sp),),
-                        Text(title5,style: TextStyle(fontSize: 14.sp,fontWeight: FontWeight.bold),)
-                      ],
-                    ),
-                    TextButton(onPressed: (){}, child: Text(title4))
-                  ],
-                ),
-
-                Text(title1,style: TextStyle(
-                  fontSize: 12.sp
-                ),)
-              ],
-            )
-
-
-
-          )
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Icon(Icons.circle_outlined),
+                      Image.asset(
+                        'assets/icons/profile/address/home.png',
+                        scale: 20,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            title2,
+                            style: TextStyle(fontSize: 12.sp),
+                          ),
+                          Text(
+                            title5,
+                            style: TextStyle(
+                                fontSize: 14.sp, fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                      TextButton(onPressed: () {}, child: Text(title4))
+                    ],
+                  ),
+                  Text(
+                    title1,
+                    style: TextStyle(fontSize: 12.sp),
+                  )
+                ],
+              ))
         ],
       ),
     );

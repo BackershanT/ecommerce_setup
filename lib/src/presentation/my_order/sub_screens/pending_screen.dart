@@ -17,7 +17,7 @@ class PendingScreen extends StatelessWidget {
         children: [
           DetailCard(onTap: (){
 
-          }, title: 'Pending',)
+          }, title: 'Pending',textColor: Colors.deepOrange,)
 
         ],
       ),

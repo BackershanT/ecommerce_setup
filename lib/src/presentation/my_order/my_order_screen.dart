@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:ecommerce_setup/src/presentation/my_order/sub_screens/cancelled_screen.dart';
 import 'package:ecommerce_setup/src/presentation/my_order/sub_screens/delivered_screen.dart';
 import 'package:ecommerce_setup/src/presentation/my_order/sub_screens/pending_screen.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class _MyOrderScreenState extends State<MyOrderScreen>
   final String title = "My Order";
   final String title1 = "Pending";
   final String title2 = "Delivered";
-  final String title3 = "My Order";
+  final String title3 = "Cancelled";
   @override
   void initState() {
     super.initState();
@@ -91,7 +92,7 @@ class _MyOrderScreenState extends State<MyOrderScreen>
         children: [
           PendingScreen(onTap: () {  },),
           DeliveredScreen(onTap: () {  },),
-          PendingScreen(onTap: () {  },),
+          CancelledScreen(onTap: () {  },),
 
         ],),
     );

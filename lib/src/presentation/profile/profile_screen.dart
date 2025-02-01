@@ -17,7 +17,6 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -25,7 +24,7 @@ class ProfileScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
 
-            Padding(padding: EdgeInsets.symmetric(horizontal: 15,vertical: 15),child:
+            Padding(padding: EdgeInsets.symmetric(horizontal: 30,vertical: 15),child:
             Row(
               children: [
                 CircleAvatar(

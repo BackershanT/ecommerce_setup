@@ -7,8 +7,10 @@ import 'detail_button.dart';
 class DetailCard extends StatelessWidget {
   final VoidCallback onTap;
   final String title;
+  final Color ? textColor;
 
-  const DetailCard({super.key, required this.onTap, required this.title});
+
+  const DetailCard({super.key, required this.onTap, required this.title, this.textColor});
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +80,7 @@ class DetailCard extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: TextStyle(fontSize: 14.sp),
+                    style: TextStyle(fontSize: 14.sp,color: textColor),
                   ),
                   DetailButton(
                     title: 'Details',

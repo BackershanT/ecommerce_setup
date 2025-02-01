@@ -1,11 +1,13 @@
 import 'dart:math';
 
+import 'package:ecommerce_setup/src/presentation/home/widgets/category_section.dart';
 import 'package:ecommerce_setup/src/presentation/main_widget/custom_drawer.dart';
 import 'package:ecommerce_setup/src/presentation/main_widget/main_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/utils/drawer_list.dart';
+import '../../core/utils/home_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,9 +21,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final String title1 = "Others";
-    final String title2 = 'Raihanath T';
-    final String title3 = "backershan.t@gmail.com";
+
     final String title4 = "APPname";
     return Scaffold(
         key: _scaffoldKey,
@@ -56,16 +56,14 @@ class _HomePageState extends State<HomePage> {
                         )))),
           ],
         ),
-        body: ListView(
-          children: [
-            MainCard(
-              height: 168.h,
-              width: 312.w,
-              radius: 12,
-              backgroundColor: Colors.green,
-              padding: EdgeInsets.symmetric(horizontal: 15),
-            )
-          ],
-        ));
+        body: ListView(children: [
+        Padding(padding: EdgeInsets.symmetric(horizontal: 16,vertical: 20),child:
+    Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+
+    children: [
+        CategorySection(),
+    ]))
+    ]));
   }
 }
