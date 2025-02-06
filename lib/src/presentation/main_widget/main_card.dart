@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MainCard extends StatelessWidget {
   const MainCard({super.key, this.width, this.height, this.radius, this.child, this.backgroundColor, this.padding, this.elevation, });

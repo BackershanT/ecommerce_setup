@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:ecommerce_setup/src/core/constants/size/kheight.dart';
 import 'package:ecommerce_setup/src/presentation/main_widget/custom_drawer.dart';
 import 'package:ecommerce_setup/src/presentation/main_widget/main_back_button.dart';
@@ -13,10 +11,10 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String title4="Settings";
-    final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+    final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
     return  Scaffold(
-      key: _scaffoldKey,
+      key: scaffoldKey,
 drawer: CustomDrawer(),
       appBar: AppBar(
         leading: MainBackButton(),

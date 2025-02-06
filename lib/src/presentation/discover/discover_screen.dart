@@ -1,8 +1,7 @@
 import 'dart:math';
 
 import 'package:ecommerce_setup/src/presentation/main_widget/custom_drawer.dart';
-import 'package:ecommerce_setup/src/presentation/main_widget/main_back_button.dart';
-import 'package:ecommerce_setup/src/presentation/notification/notification_screen.dart';
+
 import 'package:flutter/material.dart';
 
 class DiscoverScreen extends StatelessWidget {
@@ -10,17 +9,17 @@ class DiscoverScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+    final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
     final String title ="Discover";
     return Scaffold(
-      key: _scaffoldKey,
+      key: scaffoldKey,
       drawer: CustomDrawer(),
       appBar: AppBar(
         leading: Padding(
           padding: EdgeInsets.symmetric(horizontal: 15),
           child: GestureDetector(
-            onTap: () => _scaffoldKey.currentState?.openDrawer(),
+            onTap: () => scaffoldKey.currentState?.openDrawer(),
             child: Image.asset(
               'assets/icons/menus.png',
               scale: 20,

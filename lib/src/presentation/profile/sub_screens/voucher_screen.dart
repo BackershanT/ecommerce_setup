@@ -42,7 +42,7 @@ class VoucherScreen extends StatelessWidget {
     final String title1 = "Black Friday";
     final String title2 = "Sale off 50%";
     final String title3 = "Code: fridaysale";
-    return Container(
+    return SizedBox(
       child: Row(
         children: [
           MainCard(
@@ -53,7 +53,7 @@ class VoucherScreen extends StatelessWidget {
             backgroundColor: Color(0XFF777E90),
             padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
             child: Center(
-              child: 
+              child:
               Text('data'),
             ),
           ),
@@ -85,7 +85,7 @@ class VoucherScreen extends StatelessWidget {
     final String title4 = "Exp";
     final String title5 = "20";
     final String title6 = "Dec";
-    return Container(
+    return SizedBox(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

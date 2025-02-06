@@ -2,12 +2,9 @@ import 'dart:math';
 
 import 'package:ecommerce_setup/src/presentation/home/widgets/category_section.dart';
 import 'package:ecommerce_setup/src/presentation/main_widget/custom_drawer.dart';
-import 'package:ecommerce_setup/src/presentation/main_widget/main_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../core/utils/drawer_list.dart';
-import '../../core/utils/home_list.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

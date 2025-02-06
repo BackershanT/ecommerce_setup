@@ -2,13 +2,14 @@ import 'package:ecommerce_setup/src/presentation/main_widget/main_back_button.da
 import 'package:ecommerce_setup/src/presentation/main_widget/main_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ticket_material/ticket_material.dart';
 
 class AddressScreen extends StatelessWidget {
   const AddressScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
+
     final String title = "Delivery Address";
     final String title1 = "SBI Building, street 3, Software Park";
     final String title2 = "Send To";
@@ -40,6 +41,7 @@ class AddressScreen extends StatelessWidget {
                       Image.asset(
                         'assets/icons/profile/address/company.png',
                         scale: 20,
+                        color: isDarkMode ? Colors.white:Colors.black,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,6 +82,8 @@ class AddressScreen extends StatelessWidget {
                       Image.asset(
                         'assets/icons/profile/address/home.png',
                         scale: 20,
+                        color: isDarkMode ? Colors.white:Colors.black,
+
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

@@ -7,13 +7,13 @@ class DetailButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton (onPressed: onTap, child: Text(title,style: TextStyle(color: Colors.black),),
+    return ElevatedButton (onPressed: onTap,
 
       style: ElevatedButton.styleFrom(
           side: BorderSide(
 
         ),
-      ));
+      ), child: Text(title,style: TextStyle(color: Colors.black),));
 
   }
 }

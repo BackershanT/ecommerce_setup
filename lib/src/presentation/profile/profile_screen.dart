@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProfileScreen extends StatelessWidget {
-   ProfileScreen({super.key});
+   const ProfileScreen({super.key});
   final String title1 = 'Raihanath T';
   final String title2 = 'backershan.t@gmail.com';
 
@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         height: double.infinity,
         width: double.infinity,
         child: Column(
@@ -84,10 +84,7 @@ class ProfileScreen extends StatelessWidget {
                                 );
                               } else if (i == 5) {
                                 Navigator.pop(context);
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(builder: (context) => LogoutPage()),
-                                // );
+
                               }
 
                             },
@@ -106,7 +103,7 @@ class ProfileScreen extends StatelessWidget {
                           ),
                           Divider(
                             thickness: 1,
-                            color: Colors.grey.withOpacity(0.2),
+                            color: Colors.grey,
                           )
                         ],
                       )

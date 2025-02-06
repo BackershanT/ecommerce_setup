@@ -1,10 +1,8 @@
 import 'package:ecommerce_setup/src/core/theme/theme.dart';
-import 'package:ecommerce_setup/src/presentation/bottom_navigation_bar.dart';
 import 'package:ecommerce_setup/src/presentation/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'presentation/home/home_page.dart';
 import 'presentation/notification/notification_screen.dart';
 
 class MyApp extends StatelessWidget {

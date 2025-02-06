@@ -98,7 +98,7 @@ class SignupScreen extends StatelessWidget {
         shape: BoxShape.circle,
         border: Border.all(color: Colors.black26),
       ),
-      child: FaIcon(icon, size: 24),
+      child: FaIcon(icon, size: 24.sp),
     );
   }
 }

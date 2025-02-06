@@ -1,4 +1,3 @@
-import 'package:ecommerce_setup/src/core/colors.dart';
 import 'package:ecommerce_setup/src/presentation/main_widget/main_back_button.dart';
 import 'package:ecommerce_setup/src/presentation/main_widget/main_card.dart';
 import 'package:flutter/material.dart';
