@@ -69,6 +69,7 @@ flutter:
     - assets/icons/profile/
     - assets/icons/drawer/
     - assets/icons/profile/address/
+    - assets/icons/order/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -16,7 +16,7 @@ class DetailCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return MainCard(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        height: 195.h,
+        height: 200.h,
         width: 336.w,
         elevation: 5,
         radius: 10,
@@ -49,7 +49,7 @@ class DetailCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Tracking No:',
+                    'Tracking No:  IK287368838',
                     style: TextStyle(fontSize: 14.sp),
                   ),
                 ],
@@ -65,7 +65,7 @@ class DetailCard extends StatelessWidget {
                     style: TextStyle(fontSize: 14.sp),
                   ),
                   Text(
-                    'Subtotal:',
+                    'Subtotal: 220',
                     style: TextStyle(
                       fontSize: 14.sp,
                     ),

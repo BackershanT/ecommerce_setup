@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:ecommerce_setup/src/presentation/my_order/sub_screens/cancelled_screen.dart';
 import 'package:ecommerce_setup/src/presentation/my_order/sub_screens/delivered_screen.dart';
+import 'package:ecommerce_setup/src/presentation/my_order/sub_screens/detailed_card_details.dart';
 import 'package:ecommerce_setup/src/presentation/my_order/sub_screens/pending_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -90,7 +91,8 @@ class _MyOrderScreenState extends State<MyOrderScreen>
       body: TabBarView(
         controller:_tabController,
         children: [
-          PendingScreen(onTap: () {  },),
+          PendingScreen(onTap: () {
+                   },),
           DeliveredScreen(onTap: () {  },),
           CancelledScreen(onTap: () {  },),
 
