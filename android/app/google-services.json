@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "94853445995",
+    "project_id": "fashion51",
+    "storage_bucket": "fashion51.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94853445995:android:99dcce19ac51c0e49bb42e",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_setup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-Ig8v5pvydT1J02Kd6r4WteV4sZv8mAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

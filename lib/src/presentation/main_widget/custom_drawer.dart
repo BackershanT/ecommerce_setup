@@ -18,8 +18,7 @@ class CustomDrawer extends StatelessWidget {
     final String title1 = "Others";
     final String title2 = 'Raihanath T';
     final String title3 = "backershan.t@gmail.com";
-    return Drawer( width: 210.w,
-      shape: RoundedRectangleBorder(
+    return Drawer(shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(20), bottomRight: Radius.circular(20))),
       child: ListView(

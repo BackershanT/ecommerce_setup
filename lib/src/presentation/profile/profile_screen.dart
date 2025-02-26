@@ -43,7 +43,8 @@ class ProfileScreen extends StatelessWidget {
                 )),
               ],
             ),),
-            MainCard(
+            MainCard(image: '',
+
                 height: 440.h,
                 width: 327.w,
                 radius: 15,

@@ -15,6 +15,7 @@ class DetailCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MainCard(
+      image: '',
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         height: 200.h,
         width: 336.w,

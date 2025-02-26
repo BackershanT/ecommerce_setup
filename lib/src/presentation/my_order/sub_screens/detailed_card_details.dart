@@ -15,7 +15,7 @@ class DetailedCardDetails extends StatelessWidget {
         centerTitle: true,
       ),
         body: ListView(children: [
-          MainCard(
+          MainCard(image: '',
             width: 327.w,
             height: 92.h,
             padding: EdgeInsets.symmetric(horizontal: 24),

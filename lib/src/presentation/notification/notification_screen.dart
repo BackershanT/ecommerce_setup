@@ -22,7 +22,7 @@ appBar: AppBar(
         children: [
 
        MainCard(
-
+image: '',
          width: 315.w,
          height: 105.h,
         radius: 15,

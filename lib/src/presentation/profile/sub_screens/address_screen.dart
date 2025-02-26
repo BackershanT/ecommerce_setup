@@ -26,6 +26,7 @@ class AddressScreen extends StatelessWidget {
       body: ListView(
         children: [
           MainCard(
+            image: '',
               radius: 20,
               elevation: 8,
               width: 315.w,
@@ -67,6 +68,7 @@ class AddressScreen extends StatelessWidget {
                 ],
               )),
           MainCard(
+            image: '',
               radius: 20,
               elevation: 8,
               width: 315.w,

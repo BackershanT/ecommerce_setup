@@ -1,0 +1,17 @@
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+
+
+  image: assets/order/delivery.png
+  image_dark: assets/order/delivery.png
+  color: '#ed2256'
+  color_dark: "#2f3640"
+
+  android_12:
+    image: assets/order/delivery.png
+    image_dark: assets/order/delivery.png
+    color: '#ed2256'
+    color_dark: "#2f3640"
+

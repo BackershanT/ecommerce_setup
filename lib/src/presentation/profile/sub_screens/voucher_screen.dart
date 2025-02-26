@@ -46,6 +46,7 @@ class VoucherScreen extends StatelessWidget {
       child: Row(
         children: [
           MainCard(
+            image: '',
             height: 60.h,
             width: 60.w,
             elevation: 8,

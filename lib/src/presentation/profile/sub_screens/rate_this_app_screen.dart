@@ -31,6 +31,7 @@ class RateThisAppScreen extends StatelessWidget {
           RatingStars(rating: 2.5, editable: true,
           color: Colors.white,),
           MainCard(
+            image: '',
             height: 267.h,
             width: 308.w,
             radius: 20,
